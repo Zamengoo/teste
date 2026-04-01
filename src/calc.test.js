@@ -9,5 +9,5 @@ test('subtração simples', () => {
 });
 
 test('multiplicacao simples', () => {
-    expect(calc.multiplicar(5, 2)).toBe(5);
+    expect(calc.multiplicar(5, 2)).toBe(10);
 })
