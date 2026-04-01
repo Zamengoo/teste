@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "calc.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node src/calc.test.js"
   },
   "devDependencies": {
     "jest": "^30.3.0"

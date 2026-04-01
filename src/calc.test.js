@@ -1,5 +1,5 @@
 const assert = require("assert");
-const { somar, subtrair, multiplicar } = require("./calc");
+const { somar, subtrair, multiplicar } = require("./src/calc");
 
 assert.strictEqual(somar(2, 3), 5);
 assert.strictEqual(subtrair(10, 4), 6);
