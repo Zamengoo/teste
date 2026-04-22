@@ -161,4 +161,4 @@ jobs:
         run: docker compose exec -T calculadora-app ping -c 1 servico-vizinho
 
       - name: rodar teste unitarios (npm)
-        run: docker compose exec -T calculadora-app npm test
+        run: docker compose run --rm -T calculadora-app npm test
