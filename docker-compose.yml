@@ -1,0 +1,9 @@
+services:
+
+  calculadora-app:
+    build: .
+    image: zamengo/calc:latest
+
+  servico-vizinho:
+    image: alpine
+    command: sleep infinity
