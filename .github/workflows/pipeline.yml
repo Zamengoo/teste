@@ -154,5 +154,11 @@ jobs:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASS }}
 
-      - name: rodar testes dentro do container
-        run: docker run zamengo/calc:latest npm test
+      - name: subir ambiente de Testes
+        run: docker compose up -d
+
+      - name: validar comunicação (ping)
+        run: docker compose exec -T calculadora-app ping -c 1 servico-vizinho
+
+      - name: rodar teste unitarios (npm)
+        run: docker compose exec -t calculadora-app npm test

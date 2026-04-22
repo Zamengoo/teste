@@ -6,4 +6,4 @@ services:
 
   servico-vizinho:
     image: alpine
-    command: sleep infinity
+    command: sleep infinityj
